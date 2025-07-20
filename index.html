@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Menu + Profile</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google fonts + Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /><!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Font Awesome Icons -->
+
+ <title>Memory Card Game | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  </head>
+
+  <body>
+    <!-- Top navbar for small screen toggle -->
+    <nav class="site-nav">
+      <button class="sidebar-toggle">
+        <span class="material-symbols-rounded">menu</span>
+      </button>
+    </nav>
+
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar collapsed">
+        <div class="sidebar-header">
+          <img src="logo.png" alt="Logo" class="header-logo" />
+          <button class="sidebar-toggle">
+            <span class="material-symbols-rounded">chevron_left</span>
+          </button>
+        </div>
+
+        <div class="sidebar-content">
+          <form class="search-form">
+            <span class="material-symbols-rounded">search</span>
+            <input type="search" placeholder="Search..." required />
+          </form>
+
+          <!-- Sidebar Menu -->
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="#" class="menu-link active" data-page="profile">
+                <span class="material-symbols-rounded">person</span>
+                <span class="menu-label">Profile</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link" data-page="analytics">
+                <span class="material-symbols-rounded">analytics</span>
+                <span class="menu-label">Analytics</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link" data-page="notifications">
+                <span class="material-symbols-rounded">notifications</span>
+                <span class="menu-label">Notifications</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link" data-page="favourites">
+                <span class="material-symbols-rounded">star</span>
+                <span class="menu-label">Favourites</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link" data-page="products">
+                <span class="material-symbols-rounded">storefront</span>
+                <span class="menu-label">Products</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link" data-page="customers">
+                <span class="material-symbols-rounded">group</span>
+                <span class="menu-label">Customers</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link" data-page="settings">
+                <span class="material-symbols-rounded">settings</span>
+                <span class="menu-label">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-footer">
+          <button class="theme-toggle">
+            <div class="theme-label">
+              <span class="theme-icon material-symbols-rounded">dark_mode</span>
+              <span class="theme-text">Dark Mode</span>
+            </div>
+            <div class="theme-toggle-track">
+              <div class="theme-toggle-indicator"></div>
+            </div>
+          </button>
+        </div>
+      </aside>
+
+      <div class="main-content">
+        <section id="profile" class="page-section">
+          <div class="profile-card">
+            <div class="image">
+              <img src="https://media.giphy.com/media/mDBoZ7ppLxPspMV3LN/giphy.gif" class="profile-pic" />
+            </div>
+            <div class="data">
+              <h2>Nguyễn Ân Phát</h2>
+              <span>kkk</span>
+            </div>
+            <div class="row">
+              <div class="info">
+                <h3>Following</h3>
+                <span>999</span>
+              </div>
+              <div class="info">
+                <h3>Followers</h3>
+                <span>5000</span>
+              </div>
+              <div class="info">
+                <h3>Posts</h3>
+                <span>209</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="https://www.facebook.com/share/17124HruJ6/" class="btn"><i class="fab fa-facebook-f"></i>Facebook</a>
+              <a href="https://youtube.com/@phatnguyenan8883" class="btn"> <i class="fab fa-youtube"></i>YouTube</a>
+            </div>
+          </div>
+
+          <div class="card-wrapper">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#" class="card-link">
+          <img src="https://media.giphy.com/media/Fn4qsKWzqapnqHlgSL/giphy.gif" class="card-image" class="card-image" alt="Card Image">
+          <span class="badge badge-designer">Welcome</span>
+          <h3 class="card-title">We Bare Bears</h3>
+          <p>3 main characters</p>
+          <button class="card-button material-symbols-rounded">arrow_forward</button>
+
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#" class="card-link">
+          <img src="https://media.giphy.com/media/UYVZIc9GyREBlL4UdZ/giphy.gif" class="card-image" class="card-image" alt="Card Image">
+          <span class="badge badge-developer">Gấu Xám</span>
+          <h3 class="card-title">Grizzly Bear</h3>
+          <p>BIG BROTHER</p>
+          <button class="card-button material-symbols-rounded" aria-label="Go to next">arrow_forward</button>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="#" class="card-link">
+          <img src="https://media.giphy.com/media/YgsAh2cGCYYUsBQ0Bj/giphy.gif" class="card-image" class="card-image" class="card-image" alt="Card Image">
+          <span class="badge badge-developer">Gấu Trúc</span>
+          <h3 class="card-title">Panda</h3>
+          <p>BIG BROTHER</p>
+          <button class="card-button material-symbols-rounded" aria-label="Go to next">arrow_forward</button>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="#" class="card-link">
+          <img src="https://media.giphy.com/media/j10BDZ0zsAQlsYDYzi/giphy.gif" class="card-image" class="card-image" alt="Card Image">
+          <span class="badge badge-developer">Gấu Trắng</span>
+          <h3 class="card-title">Ice bear</h3>
+          <p>BIG BROTHER</p>
+          <button class="card-button material-symbols-rounded" aria-label="Go to next">arrow_forward</button>
+        </a>
+      </div>
+
+      <div class="swiper-slide">
+        <a href="#" class="card-link">
+          <img src="https://media.giphy.com/media/Vg6gXT0JRo1L27cNy7/giphy.gif" class="card-image" class="card-image" alt="Card Image">
+          <span class="badge badge-developer">Cảm Ơn Đã Ghé Qua</span>
+          <h3 class="card-title">Thanks for watching</h3>
+          <p>Bye</p>
+          <button class="card-button material-symbols-rounded" aria-label="Go to next">arrow_forward</button>
+        </a>
+      </div>
+      <!-- Thêm các slide khác nếu cần -->
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+        <!-- Placeholder cho các trang khác -->
+        <section id="analytics" class="page-section" style="display: none;">
+    
+    <div class="wrapper">
+        <ul class="cards">
+
+<li class="card"><div class="view front-view"><img src="que_icon.svg" alt="icon"></div><div class="view back-view"><img src="img-1.png" alt="card-img"></div></li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-6.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-3.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-2.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-1.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-5.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-2.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-6.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-3.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-4.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-5.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-4.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-4.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-4.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-4.png" alt="card-img">
+                </div>
+            </li>
+            <li class="card">
+                <div class="view front-view">
+                    <img src="que_icon.svg" alt="icon">
+                </div>
+                <div class="view back-view">
+                    <img src="img-4.png" alt="card-img">
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<section id="notifications" class="page-section" style="display: none;">
+          <h1>Notifications Page</h1>
+        </section>
+        <section id="favourites" class="page-section" style="display: none;">
+          <h1>Favourites Page</h1>
+        </section>
+        <section id="products" class="page-section" style="display: none;">
+          <h1>Products Page</h1>
+        </section>
+        <section id="customers" class="page-section" style="display: none;">
+          <h1>Customers Page</h1>
+        </section>
+        <section id="settings" class="page-section" style="display: none;">
+          <h1>Settings Page</h1>
+        </section>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
